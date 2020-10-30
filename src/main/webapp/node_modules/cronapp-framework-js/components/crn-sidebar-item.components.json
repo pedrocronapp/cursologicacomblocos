@@ -1,0 +1,25 @@
+{
+  "name": "crn-sidebar-item",
+  "text_pt_BR": "Item de menu barra lateral",
+  "text_en_US": "SideBarMenuItem",
+  "class": "cpn cpn-sidebar",
+  "properties": {
+    "class": {
+      "order": 9999
+    }
+  },
+  "template": "",
+  "pallete": false,
+  "handleRules": {
+    "canIncrement": true,
+    "canToggle": true,
+    "rules": [
+      {
+        "toggleSelector": ".sub-menu.collapse",
+        "toggleClass": "in",
+        "sourceHTML": "<li><a href=\"#/\" class=\"component-holder col-md-12\" data-component=\"crn-anchor\">Submenu Item</a></li>",
+        "targetSelector": ".sub-menu"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "crn-container",
+  "text_pt_BR": "Recipiente",
+  "text_en_US": "Container",
+  "class": "adjust-icon mdi mdi-select",
+  "wrapper": false,
+  "template": "<div data-replace=\"true\">&nbsp;</div>",
+  "properties": {
+    "id": {
+      "order": 1
+    },
+    "class": {
+      "order": 9999
+    }
+  }
+}

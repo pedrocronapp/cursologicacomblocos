@@ -1,0 +1,24 @@
+{
+  "name": "crn-ion-content",
+  "text_pt_BR": "Conteúdo",
+  "text_en_US": "Content",
+  "pallete": false,
+  "class": "adjust-icon mdi mdi-airplay",
+  "wrapper": false,
+  "template": "<ion-content data-component=\"crn-ion-content\"></ion-content>",
+  "controls": {
+    "ungroup": true,
+    "resizable": false,
+    "additive": false,
+    "duplicable": false,
+    "pluggable": false,
+    "removable": false
+  },
+  "droppableArea": {
+    "onmiddle": true,
+    "ontop": false,
+    "onbottom": false,
+    "onleft": false,
+    "onright": false
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "includes": [
+    {
+      "file": "index.html",
+      "script": "node_modules/cronapp-lib-js/dist/js/tinymce/plugins/angular-ui-tinymce/dist/tinymce.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "node_modules/cronapp-lib-js/dist/js/kendo-ui/js/timezones/kendo.timezones.min.js",
+      "type": "script"
+    }
+  ],
+  "removes": [
+    {
+      "file": "index.html",
+      "script": "node_modules/cronapp-framework-js/dist/js/tinymce/node_modules/tinymce/tinymce.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "node_modules/cronapp-lib-js/dist/js/tinymce/node_modules/tinymce/tinymce.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "node_modules/cronapp-framework-js/dist/js/tinymce/node_modules/angular-ui-tinymce/dist/tinymce.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "node_modules/cronapp-lib-js/dist/js/tinymce/node_modules/angular-ui-tinymce/dist/tinymce.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "node_modules/cronapp-framework-js/dist/js/kendo-ui/styles/kendo.common.min.css?v=2.0.0",
+      "type": "style"
+    },
+    {
+      "file": "index.html",
+      "script": "node_modules/cronapp-framework-js/dist/js/kendo-ui/styles/kendo.cerulean.css?v=2.0.0",
+      "type": "style"
+    },
+    {
+      "file": "index.html",
+      "script": "node_modules/cronapp-framework-js/dist/js/kendo-ui/styles/kendo.cerulean.mobile.min.css?v=2.0.0",
+      "type": "style"
+    },
+    {
+      "file": "index.html",
+      "script": "node_modules/cronapp-framework-js/dist/js/kendo-ui/js/kendo.all.fixed.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "node_modules/cronapp-framework-js/dist/js/kendo-ui/js/cultures/kendo.culture.pt-BR.min.js",
+      "type": "script"
+    },
+	{
+      "file": "index.html",
+      "script": "node_modules/cronapp-lib-js/dist/js/kendo-ui/styles/kendo.common.min.css?v=2.0.0",
+      "type": "style",
+      "onTop": true
+    },
+    {
+      "file": "index.html",
+      "script": "node_modules/cronapp-lib-js/dist/js/kendo-ui/styles/kendo.cerulean.css?v=2.0.0",
+      "type": "style",
+      "onTop": true
+    },
+    {
+      "file": "index.html",
+      "script": "node_modules/cronapp-lib-js/dist/js/kendo-ui/styles/kendo.cerulean.mobile.min.css?v=2.0.0",
+      "type": "style",
+      "onTop": true
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/tinymce/node_modules/tinymce/tinymce.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-lib-js/dist/js/tinymce/node_modules/tinymce/tinymce.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/tinymce/node_modules/angular-ui-tinymce/dist/tinymce.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-lib-js/dist/js/tinymce/node_modules/angular-ui-tinymce/dist/tinymce.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/kendo-ui/styles/kendo.common.min.css?v=2.0.0",
+      "type": "style"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/kendo-ui/styles/kendo.cerulean.css?v=2.0.0",
+      "type": "style"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/kendo-ui/styles/kendo.cerulean.mobile.min.css?v=2.0.0",
+      "type": "style"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/kendo-ui/js/kendo.all.fixed.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/kendo-ui/js/cultures/kendo.culture.pt-BR.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-lib-js/dist/js/kendo-ui/styles/kendo.common.min.css?v=2.0.0",
+      "type": "style",
+      "onTop": true
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-lib-js/dist/js/kendo-ui/styles/kendo.cerulean.css?v=2.0.0",
+      "type": "style",
+      "onTop": true
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-lib-js/dist/js/kendo-ui/styles/kendo.cerulean.mobile.min.css?v=2.0.0",
+      "type": "style",
+      "onTop": true
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-lib-js/dist/js/kendo-ui/js/kendo.all.fixed.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-lib-js/dist/js/tinymce/node_modules/tinymce/tinymce.min.js",
+      "type": "script"
+    }
+  ],
+  "replaces":[
+    {
+      "old": "plugins/cronapp-lib-js/dist/js/tinymce/plugins/angular-ui-tinymce/dist/tinymce.min.js",
+      "new": "node_modules/cronapp-lib-js/dist/js/tinymce/plugins/angular-ui-tinymce/dist/tinymce.min.js"
+    },
+    {
+      "old": "plugins/cronapp-lib-js/dist/js/tinymce/plugins/tinymce/tinymce.min.js",
+      "new": "node_modules/cronapp-lib-js/dist/js/tinymce/plugins/tinymce/tinymce.min.js"
+    },
+    {
+      "old": "plugins/cronapp-lib-js/dist/js/kendo-ui/js/kendo.all.fixed.js",
+      "new": "node_modules/cronapp-lib-js/dist/js/kendo-ui/js/kendo.all.fixed.js"
+    },
+    {
+      "old": "plugins/cronapp-lib-js/dist/js/kendo-ui/js/cultures/kendo.culture.pt-BR.min.js",
+      "new": "node_modules/cronapp-lib-js/dist/js/kendo-ui/js/cultures/kendo.culture.pt-BR.min.js"
+    },
+    {
+      "old": "plugins/cronapp-lib-js/dist/js/kendo-ui/js/jszip.min.js",
+      "new": "node_modules/cronapp-lib-js/dist/js/kendo-ui/js/jszip.min.js"
+    }
+  ]
+}
+
+

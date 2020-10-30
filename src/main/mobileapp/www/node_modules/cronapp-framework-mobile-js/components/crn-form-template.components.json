@@ -1,0 +1,9 @@
+{
+  "name": "crn-form",
+  "text_pt_BR": "Formulário",
+  "text_en_US": "Form",
+  "order": 2,
+  "class": "adjust-icon mdi mdi-format-align-justify",
+  "designTimeSelector": "form",
+  "templateURL": "src/main/mobileapp/www/node_modules/cronapp-framework-mobile-js/dist/components/templates/form.template.html"
+}

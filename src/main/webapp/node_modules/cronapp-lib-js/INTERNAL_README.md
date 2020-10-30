@@ -1,0 +1,2 @@
+#TO MINIFY
+npm run minify

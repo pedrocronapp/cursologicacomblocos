@@ -1,0 +1,17 @@
+{
+  "name": "crn-select-options",
+  "text": "Select",
+  "pallete": false,
+  "class": "adjust-icon mdi mdi-equal-box",
+  "wrapper": true,
+  "template": "<div> select class=\"selectTeste\"> <option>Blue</option> <option selected>Green</option> <option>Red</option> </select> </div>",
+  "handleRules": {
+    "canIncrement": true,
+    "rules": [
+      {
+        "sourceHTML": " <option class=\"\"> Option</option>",
+        "targetSelector": ".selectTeste"
+      }
+    ]
+  }
+}

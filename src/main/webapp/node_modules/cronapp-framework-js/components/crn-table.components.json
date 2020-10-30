@@ -1,0 +1,68 @@
+{
+  "name": "crn-table",
+  "designTimeSelector": "table",
+  "wrapper": false,
+  "text_pt_BR": "Tabela Simples",
+  "text_en_US": "Simple Table",
+  "class": "adjust-icon mdi mdi-apps",
+  "template": "",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  },
+  "styles": [
+    {
+      "selector": "div#{id} th.active",
+      "text_pt_BR": "Coluna Ativa",
+      "text_en_US": "Active Column"
+    },
+    {
+      "selector": "div#{id} th",
+      "text_pt_BR": "Coluna Padrão",
+      "text_en_US": "Default Column"
+    }
+  ],
+  "childrenProperties": [
+    {
+      "name": "crn-datasource",
+      "selector": "div[crn-datasource]",
+      "displayName_pt_BR": "Configurações",
+      "displayName_en_US": "Configuration",
+      "type": "pageDatasource"
+    },
+    {
+      "name": "ng-init",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    },
+    {
+      "name": "ng-click",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    },
+    {
+      "name": "ng-dblclick",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseenter",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseleave",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    },
+    {
+      "name": "ng-mousemove",
+      "selector": "div[crn-datasource]",
+      "type": "event"
+    }
+  ]
+}

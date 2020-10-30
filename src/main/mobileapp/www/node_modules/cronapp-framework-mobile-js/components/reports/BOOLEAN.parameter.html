@@ -1,0 +1,10 @@
+<label for="_field_" class="item item-input item-stacked-label" data-component="crn-input-floating" ng-init="param=cloneElement(report.parameters[$index])" ng-show="isVisibleParam(param)" >
+    <span>{{getDescription(report.parameters[$index])}}</span> 
+    <div for="_field_" class="checkbox checkbox-assertive">
+        <input aria-label="{{getDescription(report.parameters[$index])}}" type="checkbox" ng-model="report.parameters[$index].value" id="_field_" name="_field_">
+        <div class="track">
+            <div class="handle"></div>
+        </div>
+    </div>
+</label> 
+

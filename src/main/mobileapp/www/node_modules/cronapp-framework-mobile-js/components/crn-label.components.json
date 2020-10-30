@@ -1,0 +1,75 @@
+{
+  "name": "crn-label",
+  "text_pt_BR": "Conteúdo",
+  "text_en_US": "Content",
+  "class": "adjust-icon mdi  mdi-format-header-2",
+  "wrapper": false,
+  "template": "<h2 xattr-position=\"text-center\" class=\"text-center\">Some label text</h2>",
+  "properties": {
+    "id": {
+      "order": 1
+    },
+    "class": {
+      "order": 9999
+    },
+    "xattr-position": {
+      "displayName_pt_BR": "Posição",
+      "displayName_en_US": "Position"
+    },
+    "ng-click": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-hold": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-double-tap": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-tap": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-swipe": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-drag": {
+      "removable": false,
+      "type": "event"
+    }
+  },
+  "attributesForPreview": [
+    {
+      "name": "xattr-position",
+      "type": "btngroup",
+      "target": "class",
+      "values": [
+        {
+          "key": "text-left",
+          "value": "Standard",
+          "icon": "mdi mdi-ray-start"
+        },
+        {
+          "key": "text-center",
+          "value": "Middle",
+          "icon": "mdi mdi-ray-vertex"
+        },
+        {
+          "key": "text-right",
+          "value": "Right",
+          "icon": "mdi mdi-ray-end"
+        }
+      ]
+    }
+  ],
+  "childrenProperties": [
+    {
+      "name": "ng-mouseover",
+      "selector": "h2",
+      "type": "event"
+    }
+  ]
+}

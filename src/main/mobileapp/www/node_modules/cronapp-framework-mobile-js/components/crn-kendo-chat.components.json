@@ -1,0 +1,83 @@
+{
+  "name": "crn-kendo-chat",
+  "text_pt_BR": "Chat",
+  "text_en_US": "Chat",
+  "wrapper": false,
+  "autoWrapper": true,
+  "class": "adjust-icon mdi mdi-wechat",
+  "templateURL": "src/main/mobileapp/www/node_modules/cronapp-framework-mobile-js/dist/components/templates/kendo-chat.template.html",
+  "properties": {
+    "ng-on-post-message": {
+      "selector": "kendo-chat",
+      "order": 1,
+      "displayName_pt_BR": "Ao postar mensagem",
+      "displayName_en_US": "On post message",
+      "removable": true,
+      "global": false,
+      "type": "event"
+    },
+    "ng-on-send-message": {
+      "selector": "kendo-chat",
+      "order": 2,
+      "displayName_pt_BR": "Ao enviar mensagem",
+      "displayName_en_US": "On send message",
+      "removable": true,
+      "global": false,
+      "type": "event"
+    },
+    "ng-on-typing-start":{
+      "selector": "kendo-chat",
+      "order": 3,
+      "displayName_pt_BR": "Ao iniciar digitação",
+      "displayName_en_US": "On typing start",
+      "removable": true,
+      "global": true,
+      "type": "event"
+    },
+    "ng-on-typing-end":{
+      "selector": "kendo-chat",
+      "order": 4,
+      "displayName_pt_BR": "Ao terminar digitação",
+      "displayName_en_US": "On typing end",
+      "removable": true,
+      "global": true,
+      "type": "event"
+    },
+    "chat-user-id": {
+      "selector": "kendo-chat",
+      "order": 1,
+      "displayName_pt_BR": "Id do usuário do chat",
+      "displayName_en_US": "Chat User Id",
+      "removable": true,
+      "global": false,
+      "type": "text"
+    },
+    "chat-username": {
+      "selector": "kendo-chat",
+      "order": 2,
+      "displayName_pt_BR": "Nome de usuário do chat",
+      "displayName_en_US": "Chat username",
+      "removable": true,
+      "global": false,
+      "type": "text"
+    },
+    "chat-user-image":{
+      "selector": "kendo-chat",
+      "order": 3,
+      "displayName_pt_BR": "Imagem do usuário do chat",
+      "displayName_en_US": "Chat user image",
+      "removable": true,
+      "global": false,
+      "type": "text"
+    },
+    "chat-placeholder":{
+      "selector": "kendo-chat",
+      "order": 4,
+      "displayName_pt_BR": "Placeholder do chat",
+      "displayName_en_US": "Chat placeholder",
+      "removable": true,
+      "global": false,
+      "type": "text"
+    }
+  }
+}

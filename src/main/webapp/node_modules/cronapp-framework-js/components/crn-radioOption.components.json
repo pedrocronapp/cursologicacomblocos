@@ -1,0 +1,57 @@
+{
+  "name": "crn-radioOption",
+  "pallete": false,
+  "text_pt_BR": "Item de opção",
+  "text_en_US": "Radio Item",
+  "childrenProperties": [
+    {
+      "name": "value",
+      "selector": "input[value]",
+      "displayName_pt_BR": "Valor do campo",
+      "displayName_en_US": "Field value",
+      "type": "text",
+      "order": 1
+    },
+    {
+      "name": "content",
+      "selector": "label",
+      "displayName_pt_BR": "Conteúdo",
+      "displayName_en_US": "Content",
+      "type": "content",
+      "order": 2
+    },
+    {
+      "name": "ng-checked",
+      "selector": "input[ng-checked]",
+      "displayName_pt_BR": "Checked",
+      "displayName_en_US": "Checked",
+      "type": "content",
+      "order": 3
+    },
+    {
+      "name": "ng-click",
+      "selector": "label[value]",
+      "type": "event"
+    },
+    {
+      "name": "ng-dblclick",
+      "selector": "label[value]",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseenter",
+      "selector": "label[value]",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseleave",
+      "selector": "label[value]",
+      "type": "event"
+    },
+    {
+      "name": "ng-mousemove",
+      "selector": "label[value]",
+      "type": "event"
+    }
+  ]
+}

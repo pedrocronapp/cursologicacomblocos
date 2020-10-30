@@ -1,0 +1,5 @@
+<label for="_field_" class="item item-input item-stacked-label" data-component="crn-input-floating" ng-init="param=cloneElement(report.parameters[$index])" ng-show="isVisibleParam(param)" > 
+    <span>{{getDescription(report.parameters[$index])}}</span> 
+    <input aria-label="{{getDescription(report.parameters[$index])}}" type="text" placeholder="{{getDescription(report.parameters[$index])}}" ng-model="report.parameters[$index].value" id="_field_" name="textinput-_field_"> 
+</label> 
+       

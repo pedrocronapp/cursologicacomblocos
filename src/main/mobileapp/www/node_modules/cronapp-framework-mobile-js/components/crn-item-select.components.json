@@ -1,0 +1,48 @@
+{
+  "name": "crn-item-select",
+  "text_pt_BR": "Item de caixa de seleção",
+  "text_en_US": "Combobox Item",
+  "class": "adjust-icon mdi mdi-equal-box",
+  "wrapper": false,
+  "pallete": false,
+  "template": "<option value=\"1\" class=\"\">Value 1</option>",
+  "properties": {
+    "id": {
+      "order": 1
+    },
+    "class": {
+      "order": 9999
+    },
+    "ng-click": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-hold": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-double-tap": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-tap": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-swipe": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-drag": {
+      "removable": false,
+      "type": "event"
+    }
+  },
+  "childrenProperties": [
+    {
+      "name": "content",
+      "selector": "self",
+      "type": "content"
+    }
+  ]
+}

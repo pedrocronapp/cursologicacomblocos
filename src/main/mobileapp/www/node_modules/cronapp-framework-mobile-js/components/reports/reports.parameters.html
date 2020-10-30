@@ -1,0 +1,20 @@
+<ion-view role="region" cache-view="false" hide-back-button="true" class="pane">
+ <ion-header-bar align-title="center" class="bar bar-positive" data-component="crn-ion-header-bar" xattr-theme="bar-positive">
+    <div class="buttons"> <button ng-click="onCancel()" class="button button-left">{{ 'Cancel' | translate}}</button> 
+    </div> 
+    <h1 class="title">{{ 'ParamForReport' | translate }} {{report.name}}</h1>
+    <div class="buttons"> <button class="button button-right" ng-click="onPrint()" >{{ 'download' | translate}}</button> 
+    </div> 
+  </ion-header-bar>
+  <ion-content class="scroll-content has-header" data-component="crn-ion-content">
+    <div> 
+      <form> 
+        <div class="list" > 
+          <div ng-if="htmlParameters.length > 0" ng-repeat="item in htmlParameters"> 
+            <span compile ng-bind-html="item | trusted"></span> 
+          </div> 
+        </div> 
+      </form> 
+    </div> 
+  </ion-content> 
+</ion-view>

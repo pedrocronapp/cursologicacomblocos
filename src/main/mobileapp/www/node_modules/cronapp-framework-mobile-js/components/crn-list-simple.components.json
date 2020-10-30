@@ -1,0 +1,166 @@
+{
+  "name": "crn-list-simple",
+  "text_pt_BR": "Lista Simples",
+  "text_en_US": "Simple List",
+  "wrapper": true,
+  "forcedGroup": true,
+  "pallete": false,
+  "class": "adjust-icon mdi mdi-view-sequential",
+  "template": "<div class=\"\" crn-datasource=\"\" ng-repeat=\"rowData in datasource.data\" ><ion-item  class=\"item dark text-left\" data-component=\"crn-list-item\" xattr-theme=\"dark\" xattr-text-position=\"text-left\" >Item 1</ion-item></div>",
+  "properties": {
+    "id": {
+      "order": 3
+    },
+    "class": {
+      "order": 9999
+    },
+    "href": {
+      "removable": false,
+      "type": "projectResource",
+      "resourceType": "text/html",
+      "order": 4
+    },
+    "ng-click": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-hold": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-double-tap": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-tap": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-swipe": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-drag": {
+      "removable": false,
+      "type": "event"
+    }
+  },
+  "childrenProperties": [
+    {
+      "name": "crn-datasource",
+      "selector": "div",
+      "displayName_pt_BR": "Fonte de dados",
+      "displayName_en_US": "Datasource",
+      "type": "pageDatasource",
+      "order": 1
+    },
+    {
+      "name": "ng-repeat",
+      "selector": "div",
+      "order": 2
+    },
+    {
+      "name": "content",
+      "selector": "ion-item",
+      "type": "content",
+      "order": 3
+    },
+    {
+      "name": "xattr-theme",
+      "displayName_pt_BR": "Tema",
+      "displayName_en_US": "Text Theme",
+      "selector": "ion-item",
+      "type": "text"
+    },
+    {
+      "name": "xattr-text-position",
+      "displayName_pt_BR": "Posição do Texto",
+      "displayName_en_US": "Text Position",
+      "selector": "ion-item",
+      "type": "text"
+    }
+  ],
+  "attributesForPreview": [
+    {
+      "name": "xattr-theme",
+      "type": "options",
+      "target": "class",
+      "values": [
+        {
+          "key": "assertive",
+          "value": "Assertive",
+          "color": "#ef473a"
+        },
+        {
+          "key": "balanced",
+          "value": "Balanced",
+          "color": "#33cd5f"
+        },
+        {
+          "key": "energized",
+          "value": "Energized",
+          "color": "#ffc900"
+        },
+        {
+          "key": "light",
+          "value": "Light",
+          "color": "#fff"
+        },
+        {
+          "key": "stable",
+          "value": "Stable",
+          "color": "#f8f8f8"
+        },
+        {
+          "key": "calm",
+          "value": "Calm",
+          "color": "#11c1f3"
+        },
+        {
+          "key": "positive",
+          "value": "Positive",
+          "color": "#387ef5"
+        },
+        {
+          "key": "royal",
+          "value": "Royal",
+          "color": "#886aea"
+        },
+        {
+          "key": "dark",
+          "value": "Dark",
+          "color": "#444"
+        }
+      ]
+    },
+    {
+      "name": "xattr-text-position",
+      "type": "btngroup",
+      "target": "class",
+      "values": [
+        {
+          "key": "text-left",
+          "value": "Left",
+          "icon": "mdi mdi-ray-start"
+        },
+        {
+          "key": "text-center",
+          "value": "Center",
+          "icon": "mdi mdi-ray-vertex"
+        },
+        {
+          "key": "text-right",
+          "value": "Right",
+          "icon": "mdi mdi-ray-end"
+        }
+      ]
+    }
+  ],
+  "styles": [
+    {
+      "selector": "#{id} ion-item",
+      "text_pt_BR": "Conteúdo",
+      "text_en_US": "Content"
+    }
+  ]
+}

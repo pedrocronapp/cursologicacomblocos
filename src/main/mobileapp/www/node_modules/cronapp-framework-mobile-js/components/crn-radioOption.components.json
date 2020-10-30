@@ -1,0 +1,21 @@
+{
+  "name": "crn-radioOption",
+  "pallete": false,
+  "childrenProperties": [
+    {
+      "name": "value",
+      "selector": "label[value]",
+      "displayName_pt_BR": "Valor do campo",
+      "displayName_en_US": "Field value",
+      "type": "text"
+    },
+    {
+      "name": "content",
+      "selector": "div.item-content",
+      "displayName_pt_BR": "Valor de exibição",
+      "displayName_en_US": "Text value",
+      "type": "text",
+      "onDisplay": "javascript:function() { return arguments[0].trim(); }"
+    }
+  ]
+}

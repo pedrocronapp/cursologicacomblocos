@@ -1,0 +1,78 @@
+{
+  "name": "crn-icon",
+  "displayName": "icon",
+  "text_pt_BR": "Ícone",
+  "text_en_US": "Icon",
+  "class": "adjust-icon mdi mdi-star",
+  "template": "<i class=\"ion ion-star\" id=\"crn-icon${RANDOM}\" style=\"font-size:300%\" xattr-size=\"font-size:300%\"/>",
+  "wrapper": false,
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    },
+    "ng-click": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-hold": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-double-tap": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-tap": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-swipe": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-drag": {
+      "removable": false,
+      "type": "event"
+    }
+  },
+  "attributesForPreview": [
+    {
+      "name": "xattr-size",
+      "type": "options",
+      "target": "style",
+      "values": [
+        {
+          "key": "font-size:100%",
+          "value": "100%"
+        },
+        {
+          "key": "font-size:200%",
+          "value": "200%"
+        },
+        {
+          "key": "font-size:300%",
+          "value": "300%"
+        },
+        {
+          "key": "font-size:400%",
+          "value": "400%"
+        },
+        {
+          "key": "font-size:500%",
+          "value": "500%"
+        },
+        {
+          "key": "font-size:600%",
+          "value": "600%"
+        },
+        {
+          "key": "font-size:700%",
+          "value": "700%"
+        }
+      ]
+    }
+  ]
+}

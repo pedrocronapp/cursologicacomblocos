@@ -1,0 +1,17 @@
+{
+  "name": "crn-foot-cell",
+  "text_pt_BR": "Célula Rodapé Tabela",
+  "text_en_US": "Table Footer Cell",
+  "class": "adjust-icon mdi mdi-apps",
+  "wrapper": false,
+  "pallete": false,
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/foot-cell.template.html",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  }
+}

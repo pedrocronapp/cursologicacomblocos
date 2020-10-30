@@ -1,0 +1,32 @@
+{
+  "name": "crn-sidebar",
+  "text_pt_BR": "Barra lateral",
+  "text_en_US": "Sidebar",
+  "class": "adjust-icon mdi mdi-book-open",
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/sidebar.template.html",
+  "pallete": false,
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  },
+  "styles": [
+    {
+      "selector": "div#{id} .navbar-default",
+      "text_pt_BR": "Barra Lateral",
+      "text_en_US": "Sidebar"
+    }
+  ],
+  "handleRules": {
+    "canIncrement": true,
+    "rules": [
+      {
+        "sourceHTML": "<li data-toggle=\"collapse\" data-component=\"crn-sidebar-item\" data-target=\"#menu-sub-${RANDOM}\" class=\"collapsed active component-holder\"><a href=\"javascript:void(0);\" class=\"\"><i class=\"fa fa-users fa-lg\"></i> <span>Menu Item</span> <span class=\"arrow\"></span></a> <ul class=\"sub-menu collapse  navbar-nav in\" id=\"menu-sub-${RANDOM}\"> <li><a href=\"#/\" class=\"component-holder col-md-12\"  data-component=\"crn-anchor\">Submenu Item</a></li>  </ul> </li> ",
+        "targetSelector": ".menu-content"
+      }
+    ]
+  }
+}

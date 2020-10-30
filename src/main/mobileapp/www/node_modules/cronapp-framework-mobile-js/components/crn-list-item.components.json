@@ -1,0 +1,124 @@
+{
+  "name": "crn-list-item",
+  "text_pt_BR": "Item",
+  "text_en_US": "Item",
+  "wrapper": false,
+  "class": "adjust-icon mdi mdi-view-sequential",
+  "template": "<ion-item  class=\"item dark text-left\" xattr-theme=\"dark\" xattr-text-position=\"text-left\" data-replace=\"true\">Item 1</ion-item>",
+  "properties": {
+    "id": {
+      "order": 2
+    },
+    "class": {
+      "order": 9999
+    },
+    "xattr-theme": {
+      "displayName_pt_BR": "Tema",
+      "displayName_en_US": "Theme"
+    },
+    "xattr-text-position": {
+      "displayName_pt_BR": "Posição",
+      "displayName_en_US": "Position"
+    },
+    "ng-click": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-hold": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-double-tap": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-tap": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-swipe": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-drag": {
+      "removable": false,
+      "type": "event"
+    }
+  },
+  "attributesForPreview": [
+    {
+      "name": "xattr-theme",
+      "type": "options",
+      "target": "class",
+      "values": [
+        {
+          "key": "assertive",
+          "value": "Assertive",
+          "color": "#ef473a"
+        },
+        {
+          "key": "balanced",
+          "value": "Balanced",
+          "color": "#33cd5f"
+        },
+        {
+          "key": "energized",
+          "value": "Energized",
+          "color": "#ffc900"
+        },
+        {
+          "key": "light",
+          "value": "Light",
+          "color": "#fff"
+        },
+        {
+          "key": "stable",
+          "value": "Stable",
+          "color": "#f8f8f8"
+        },
+        {
+          "key": "calm",
+          "value": "Calm",
+          "color": "#11c1f3"
+        },
+        {
+          "key": "positive",
+          "value": "Positive",
+          "color": "#387ef5"
+        },
+        {
+          "key": "royal",
+          "value": "Royal",
+          "color": "#886aea"
+        },
+        {
+          "key": "dark",
+          "value": "Dark",
+          "color": "#444"
+        }
+      ]
+    },
+    {
+      "name": "xattr-text-position",
+      "type": "btngroup",
+      "target": "class",
+      "values": [
+        {
+          "key": "text-left",
+          "value": "Left",
+          "icon": "mdi mdi-ray-start"
+        },
+        {
+          "key": "text-center",
+          "value": "Center",
+          "icon": "mdi mdi-ray-vertex"
+        },
+        {
+          "key": "text-right",
+          "value": "Right",
+          "icon": "mdi mdi-ray-end"
+        }
+      ]
+    }
+  ]
+}

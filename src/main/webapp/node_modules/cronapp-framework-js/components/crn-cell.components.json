@@ -1,0 +1,17 @@
+{
+  "name": "crn-cell",
+  "text_pt_BR": "Célula Tabela",
+  "text_en_US": "Table Cell",
+  "class": "adjust-icon mdi mdi-apps",
+  "wrapper": false,
+  "pallete": false,
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/cell.template.html",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  }
+}

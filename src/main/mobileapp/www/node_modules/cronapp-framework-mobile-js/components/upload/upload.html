@@ -1,0 +1,46 @@
+<ion-modal-view ng-controller="UploadController">
+    <ion-header-bar class="{{headerClass}}">
+        <h1 class="title">{{"Upload.title" | translate}}</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div style="padding: 15px">
+            <div class="form-group">
+                <div ng-show="uploading">
+                    <span>{{"Upload.sending" | translate}} ({{progress}}%)...</span>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="{{progress}}"
+                             aria-valuemin="0" aria-valuemax="100" style="width:{{progress}}%">
+                        </div>
+                    </div>
+                </div>
+
+                <div ng-show="!uploading" class="drop-box  modal-upload" style="position: relative;">
+
+                    <input type="file" ng-model="myFiles"
+                           ngf-select="uploadFile($files)"
+                           ngf-max-size="{{data.maxSize}}"
+                           ngf-multiple="{{data.multiple}}"
+                           ngf-pattern="{{data.filter}}"
+                           accept="{{data.filter}}"
+                           style="width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; opacity: 0"
+                    />
+                    <span>{{message}}</span>
+
+                </div>
+
+            </div>
+            <div style="padding-top: 15px">
+                <button type="button" class="button button-block {{buttonClass}}" style="margin: 0px" data-toggle="tooltip" title="{{ 'Cancel' | translate }}"
+                        ng-click="close()"><span class="glyphicon glyphicon-ok"></span>&nbsp;<span>{{ 'Cancel' | translate }}</span>
+                </button>
+            </div>
+        </div>
+
+    </ion-content>
+
+    <ion-footer-bar class="bar-stable">
+
+
+
+    </ion-footer-bar>
+</ion-modal-view>

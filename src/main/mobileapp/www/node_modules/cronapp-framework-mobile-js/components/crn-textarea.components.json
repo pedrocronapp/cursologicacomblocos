@@ -1,0 +1,80 @@
+{
+  "name": "crn-textarea",
+  "text_pt_BR": "Área de texto",
+  "text_en_US": "Textarea",
+  "class": "adjust-icon mdi mdi-textbox",
+  "wrapper": false,
+  "template": "<textarea aria-label='Textarea component' id=\"textArea${RANDOM}\" ng-model=\"vars.textarea${RANDOM}\" maxlength=\"300\" style=\"resize:none;\" resize=\"none\"class=\"col item item-input\" rows=\"5\" placeholder=\"Textarea component\"></textarea>",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "cronapp-security": {
+      "order": 9998
+    },
+    "id": {
+      "order": 9996
+    },
+    "ng-show": {
+      "order": 9997
+    },
+    "style": {
+      "order": 9997
+    },
+    "ng-model": {
+      "onSave": "javascript:function() { var result = arguments[0]; if (result.indexOf('.') == -1) { result = 'vars.'+result;  }  return result; }",
+      "onDisplay": "javascript:function() { return arguments[0].replace('vars.',''); }",
+      "order": 1,
+      "mandatory": true
+    },
+    "placeholder": {
+      "order": 3
+    },
+    "rows": {
+      "order": 4
+    },
+    "maxlength": {
+      "order": 5
+    },
+    "ng-keydown": {
+      "type": "event"
+    },
+    "ng-keypress": {
+      "type": "event"
+    },
+    "ng-focus": {
+      "type": "event"
+    },
+    "ng-blur": {
+      "type": "event"
+    }
+  },
+  "rows": {
+    "displayName": "rows"
+  },
+  "attributesForPreview": [
+    {
+      "name": "resize",
+      "type": "options",
+      "target": "style",
+      "values": [
+        {
+          "key": "resize:none;",
+          "value": "None"
+        },
+        {
+          "key": "resize:horizontal;",
+          "value": "Horizontal"
+        },
+        {
+          "key": "resize:vertical;",
+          "value": "Vertical"
+        },
+        {
+          "key": "resize:both;",
+          "value": "Both "
+        }
+      ]
+    }
+  ]
+}

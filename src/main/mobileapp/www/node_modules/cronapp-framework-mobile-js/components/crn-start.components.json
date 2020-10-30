@@ -1,0 +1,10 @@
+{
+  "name": "crn-start",
+  "pallete": false,
+  "wrapper": false,
+  "properties": {
+    "screen-params": {
+      "removable": false
+    }
+  }
+}

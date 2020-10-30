@@ -1,0 +1,33 @@
+{
+  "name": "crn-datasource-filter-complex",
+  "text_pt_BR": "Filtro Complexo",
+  "text_en_US": "Complex Filter",
+  "class": "adjust-icon mdi mdi-filter",
+  "pallete": false,
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  },
+  "styles": [
+    {
+      "selector": "div#{id} .btn-default",
+      "text_pt_BR": "Botão do Filtro",
+      "text_en_US": "Filter Button"
+    },
+    {
+      "selector": "div#{id} input.form-control",
+      "text_pt_BR": "Entrada de texto",
+      "text_en_US": "Input"
+    },
+    {
+      "selector": "div#{id} label",
+      "text_pt_BR": "Label",
+      "text_en_US": "Label"
+    }
+  ],
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/datasourcefiltercomplex.template.html"
+}

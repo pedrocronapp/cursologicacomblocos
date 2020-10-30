@@ -1,0 +1,82 @@
+<!doctype html>
+<html ng-app="MyApp" update-language>
+ <head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"> 
+  <title ng-bind="$root.ionViewTitle">MyApp</title> 
+  <!-- Customs --> 
+  <link href="node_modules/cronapp-framework-mobile-js/lib/ionic/css/ionic.css" rel="stylesheet"> 
+  <link href="node_modules/cronapp-framework-mobile-js/dist/css/app.css" rel="stylesheet"> 
+  <link href="node_modules/cronapp-framework-mobile-js/dist/css/cronos.css" rel="stylesheet"> 
+  <link href="css/app.css" rel="stylesheet"> 
+  <script src="js/customModules.js"></script> 
+  <script src="js/customStateProvider.js"></script> 
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="node_modules/cronapp-framework-mobile-js/lib/kendo/kendo.default-v2.min.css"> 
+ </head> 
+ <body> 
+  <ion-nav-view role="main"></ion-nav-view> 
+  <!-- Ionic Angular JS  --> 
+  <script src="node_modules/cronapp-framework-mobile-js/lib/ionic/js/ionic.bundle.js"></script> 
+  <!-- Cordova Script (this will be a 404 during development) --> 
+  <script src="cordova.js"></script> 
+  <!-- JQuery --> 
+  <script src="node_modules/jquery/dist/jquery.min.js"></script> 
+  <!-- Angular JS --> 
+  <script src="node_modules/angular-aria/angular-aria.min.js"></script> 
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script> 
+  <script src="node_modules/angular-cookies/angular-cookies.min.js"></script> 
+  <script src="node_modules/angular-resource/angular-resource.min.js"></script> 
+  <script src="node_modules/angular-sanitize/angular-sanitize.min.js"></script> 
+  <script src="node_modules/angular-translate/dist/angular-translate.min.js"></script> 
+  <script src="node_modules/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script> 
+  <script src="node_modules/angular-translate/dist/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js"></script> 
+  <script src="node_modules/angular-translate-storage-local/angular-translate-storage-local.min.js"></script> 
+  <script src="node_modules/angular-translate-handler-log/angular-translate-handler-log.min.js"></script> 
+  <script src="node_modules/angular-dynamic-locale/dist/tmhDynamicLocale.js"></script> 
+  <script src="node_modules/cronapp-framework-mobile-js/lib/notification-mobile.js"></script> 
+  <script src="node_modules/angular-messages/angular-messages.min.js"></script> 
+  <script src="node_modules/moment/min/moment-with-locales.min.js"></script> 
+  <script src="node_modules/angular-moment/angular-moment.min.js"></script> 
+  <script src="node_modules/ng-file-upload/dist/ng-file-upload.min.js"></script> 
+  <!-- CronApi Js --> 
+  <script src="node_modules/cronapi-js/dist/cronapi.min.js"></script> 
+  <!-- CronApp Framework --> 
+  <script src="node_modules/cronapp-framework-mobile-js/dist/js/app.authentication.js"></script> 
+  <script src="node_modules/cronapp-framework-mobile-js/dist/js/controllers.authentication.js"></script> 
+  <script src="node_modules/cronapp-framework-mobile-js/dist/js/services.js"></script> 
+  <script src="node_modules/cronapp-framework-mobile-js/dist/js/LocaleService.js"></script> 
+  <script src="node_modules/cronapp-framework-mobile-js/dist/js/LanguageSelectDirective.js"></script> 
+  <script src="node_modules/cronapp-framework-mobile-js/dist/js/directives.js"></script> 
+  <script src="node_modules/cronapp-framework-mobile-js/dist/js/filters.js"></script> 
+  <script src="node_modules/cronapp-framework-mobile-js/dist/components/js/jquery.mask.min.js"></script> 
+  <script src="node_modules/cronapp-framework-mobile-js/dist/components/js/jquery.inputmask.bundle.js"></script> 
+  <script src="node_modules/cronapp-framework-mobile-js/dist/components/js/format.min.js"></script> 
+  <!-- Customs --> 
+  <script src="js/blockly.js"></script> 
+  <script src="js/dataSourceMap.js"></script> 
+  <script src="js/events.js"></script> 
+  <script src="js/hostApp.js"></script> 
+  <script src="js/index.js"></script> 
+  <script src="node_modules/pace/pace.min.js"></script> 
+  <script src="node_modules/cronapp-common-js/dist/js/parser.js"></script> 
+  <script src="node_modules/cronapp-common-js/dist/js/datasource/datasource.js"></script> 
+  <script src="node_modules/cronapp-common-js/dist/js/odata-filter-parser.js"></script> 
+  <script src="node_modules/cronapp-common-js/dist/js/pouchdb.min.js"></script> 
+  <script src="node_modules/cronapp-common-js/dist/js/pouchdb.find.min.js"></script> 
+  <script src="node_modules/chart.js/dist/Chart.min.js"></script> 
+  <script src="node_modules/cronapp-framework-mobile-js/dist/components/js/qrcode.js"></script> 
+  <script src="node_modules/angular-moment/angular-moment.js"></script> 
+  <script src="js/custom.controllers.js"></script> 
+  <script src="node_modules/cronapp-framework-mobile-js/dist/js/upload.service.js"></script> 
+  <script src="node_modules/cronapp-framework-mobile-js/dist/components/js/pouchdb.cordova-sqlite.js"></script> 
+  <script src="node_modules/cronapp-framework-mobile-js/lib/kendo/kendo.all.min.js"></script> 
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+  <script src="node_modules/angular-ui-bootstrap/ui-bootstrap.min.js"></script> 
+  <script src="node_modules/angular-ui-bootstrap/ui-bootstrap-tpls.min.js"></script> 
+  <script src="node_modules/cronapp-framework-mobile-js/js/reports/parameters.controller.js"></script> 
+  <script src="node_modules/cronapp-framework-mobile-js/js/reports/reports.service.js"></script>  
+  <script src="node_modules/cronapp-lib-js/dist/js/tinymce/plugins/angular-ui-tinymce/dist/tinymce.min.js"></script>
+  <script src="node_modules/cronapp-lib-js/dist/js/kendo-ui/js/timezones/kendo.timezones.min.js"></script>
+ </body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "name": "crn-tags",
+  "text_pt_BR": "Seleção múltipla",
+  "text_en_US": "Multiselect",
+  "pallete": false,
+  "dependences": {
+    "editor": [
+      "node_modules/cronapp-framework-js/components/css/multiselect-editor.css"
+    ]
+  },
+  "class": "adjust-icon mdi mdi-format-list-bulleted",
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/multiselect.template.html",
+  "childrenProperties": [
+    {
+      "name": "crn-datasource",
+      "selector": "ui-select",
+      "type": "pageDatasource",
+      "displayName_pt_BR": "Configurações",
+      "displayName_en_US": "Configuration"
+    },
+    {
+      "name": "ng-model",
+      "selector": "ui-select",
+      "onSave": "javascript:function() { var result = arguments[0]; if (result.indexOf('.') == -1 && result.trim().length > 0 ) { result = 'vars.'+result;  }  return result; }",
+      "onDisplay": "javascript:function() { return arguments[0].replace('vars.',''); }",
+      "displayName_pt_BR": "Campo",
+      "displayName_en_US": "Field",
+      "mandatory": true
+    },
+    {
+      "name": "repeat",
+      "selector": "ui-select-choices",
+      "displayName_pt_BR": "Repetir",
+      "displayName_en_US": "Repeat"
+    }
+  ],
+  "properties": {
+    "ng-model": {
+      "displayName": "Field",
+      "placehold": "ng-model",
+      "mandatory": true
+    }
+  }
+}

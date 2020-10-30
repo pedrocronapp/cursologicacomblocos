@@ -1,0 +1,17 @@
+{
+  "name": "crn-head-row",
+  "text_pt_BR": "Linha Tabela",
+  "text_en_US": "Table Row",
+  "class": "adjust-icon mdi mdi-apps",
+  "wrapper": false,
+  "pallete": false,
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/dist/components/templates/head-row.template.html",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  }
+}

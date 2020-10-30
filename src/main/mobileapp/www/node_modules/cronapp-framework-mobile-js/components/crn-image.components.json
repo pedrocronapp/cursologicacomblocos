@@ -1,0 +1,67 @@
+{
+  "name": "crn-image",
+  "text_pt_BR": "Imagem",
+  "text_en_US": "Image",
+  "class": " adjust-icon mdi mdi-image",
+  "wrapper": false,
+  "template": "<img alt='Avatar' src=\"img/nophoto.png\" class=\"\" style=\"\"  xattr-position=\"\" >",
+  "properties": {
+    "src": {
+      "type": "projectResource",
+      "resourceType": "image/jpeg,image/gif,image/png",
+      "order": 1
+    },
+    "xattr-position": {
+      "removable": false,
+      "order": 2
+    },
+    "ng-click": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-hold": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-double-tap": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-tap": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-swipe": {
+      "removable": false,
+      "type": "event"
+    },
+    "on-drag": {
+      "removable": false,
+      "type": "event"
+    }
+  },
+  "attributesForPreview": [
+    {
+      "name": "xattr-position",
+      "type": "btngroup",
+      "target": "class",
+      "values": [
+        {
+          "key": "left-block",
+          "value": "Standard",
+          "icon": "mdi mdi-ray-start"
+        },
+        {
+          "key": "center-block",
+          "value": "Middle",
+          "icon": "mdi mdi-ray-vertex"
+        },
+        {
+          "key": "right-block",
+          "value": "Right",
+          "icon": "mdi mdi-ray-end"
+        }
+      ]
+    }
+  ]
+}

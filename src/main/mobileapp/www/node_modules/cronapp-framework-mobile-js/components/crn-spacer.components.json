@@ -1,0 +1,16 @@
+{
+  "name": "crn-spacer",
+  "text_pt_BR": "Espaço",
+  "text_en_US": "Spacer",
+  "class": " adjust-icon mdi mdi-file-presentation-box",
+  "wrapper": false,
+  "template": "<div style= \"height: 100px;\">&nbsp;</div>",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  }
+}

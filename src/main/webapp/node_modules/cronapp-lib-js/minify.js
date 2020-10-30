@@ -1,0 +1,7 @@
+const path = require('path')
+const fs = require("fs");
+const Terser = require("terser");
+
+fs.writeFileSync(path.join(__dirname, 'dist', 'js','kendo-ui','js', 'kendo.all.fixed.js'), Terser.minify({
+    "kendo.all.fixed.src.js": fs.readFileSync(path.join(__dirname, 'dist', 'js','kendo-ui','js', 'kendo.all.fixed.src.js'), "utf8"),
+}).code, "utf8");

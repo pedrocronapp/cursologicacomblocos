@@ -1,0 +1,59 @@
+{
+  "id": "f25d2879-c560-4ded-849d-2b00ba7dfd04",
+  "version": "2.0",
+  "name": "Test",
+  "url": "https://www.cronapp.io/",
+  "tests": [{
+    "id": "ffe90a92-1786-4e1c-a3a3-b3e485ea4838",
+    "name": "BasicRecording",
+    "commands": [{
+      "id": "7b176145-d5a0-4e4d-a504-b6f579f4639f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.cronapp.io/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7cd3dbf5-125f-4b0d-a273-13c60fdc406b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f30bc03c-9116-4fb1-bd3c-0fafae7baa7b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Teste grátis",
+      "targets": [
+        ["linkText=Teste grátis", "linkText"],
+        ["css=.btn-teste-gratis-menu", "css:finder"],
+        ["xpath=//a[contains(text(),'Teste grátis')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://acesso.cronapp.io/#/cadastrar')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Teste grátis')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9067",
+      "windowTimeout": 2000
+    }, {
+      "id": "b6758b68-7291-4e91-abac-1e88a7cb1f1b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9067}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c0c4b387-3f3b-46dd-89bc-0d75480998d5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ffe90a92-1786-4e1c-a3a3-b3e485ea4838"]
+  }],
+  "urls": [],
+  "plugins": []
+}

@@ -1,0 +1,68 @@
+{
+  "name": "crn-menu-item",
+  "text_pt_BR": "Item de menu",
+  "text_en_US": "MenuItem",
+  "class": "cpn cpn-navbar",
+  "template": "",
+  "pallete": false,
+  "handleRules": {
+    "canToggle": true,
+    "canIncrement": true,
+    "rules": [
+      {
+        "toggleSelector": ".dropdown",
+        "toggleClass": "open",
+        "sourceHTML": "<li><a href=\"#\" class=\"component-holder col-md-12\"  data-component=\"crn-anchor\">Action item</a></li>",
+        "targetSelector": "ul.dropdown-menu"
+      }
+    ]
+  },
+  "childrenProperties": [
+    {
+      "name": "content",
+      "selector": "a > span:first",
+      "type": "content",
+      "displayName_pt_BR": "Conteúdo",
+      "displayName_en_US": "Content"
+    },
+    {
+      "name": "class",
+      "selector": "i",
+      "displayName_pt_BR": "Ícone",
+      "displayName_en_US": "Icon",
+      "type": "icon"
+    },
+    {
+      "name": "ng-click",
+      "selector": "a.dropdown-toggle",
+      "type": "event"
+    },
+    {
+      "name": "ng-click",
+      "selector": "ul",
+      "type": "event",
+      "displayName_pt_BR": "Ao Selecionar",
+      "displayName_en_US": "On Select"
+    },
+    {
+      "name": "ng-dblclick",
+      "selector": "a.dropdown-toggle",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseenter",
+      "selector": "a.dropdown-toggle",
+      "type": "event"
+    },
+    {
+      "name": "ng-mouseleave",
+      "selector": "a.dropdown-toggle",
+      "type": "event"
+    },
+    {
+      "name": "ng-mousemove",
+      "selector": "a.dropdown-toggle",
+      "type": "event"
+    }
+  ]
+}

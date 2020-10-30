@@ -1,0 +1,72 @@
+{
+  "name": "crn-option-button",
+  "text": "Option Button",
+  "pallete": false,
+  "class": "adjust-icon mdi mdi-stop",
+  "template": "<ion-option-button class=\"button-positive button\"><i class=\"icon ion-home\">home</i></ion-option-button>",
+  "groupedChildren": [
+    {
+      "text_pt_BR": "Ícone",
+      "text_en_US": "Icon",
+      "selector": "i"
+    }
+  ],
+  "attributesForPreview": [
+    {
+      "name": "xattr-theme",
+      "type": "options",
+      "target": "class",
+      "values": [
+        {
+          "key": "",
+          "value": "Default"
+        },
+        {
+          "key": "button-assertive",
+          "value": "Assertive",
+          "color": "#ef473a"
+        },
+        {
+          "key": "button-balanced",
+          "value": "Balanced",
+          "color": "#33cd5f"
+        },
+        {
+          "key": "button-energized",
+          "value": "Energized",
+          "color": "#ffc900"
+        },
+        {
+          "key": "button-light",
+          "value": "Light",
+          "color": "#fff"
+        },
+        {
+          "key": "button-stable",
+          "value": "Stable",
+          "color": "#f8f8f8"
+        },
+        {
+          "key": "button-calm",
+          "value": "Calm",
+          "color": "#11c1f3"
+        },
+        {
+          "key": "button-positive",
+          "value": "Positive",
+          "color": "#387ef5"
+        },
+        {
+          "key": "button-royal",
+          "value": "Royal",
+          "color": "#886aea"
+        },
+        {
+          "key": "button-dark",
+          "value": "Dark",
+          "color": "#444"
+        }
+      ]
+    }
+  ]
+}
