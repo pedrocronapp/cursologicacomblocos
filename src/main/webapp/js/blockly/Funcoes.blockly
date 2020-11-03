@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" bpmnAble="false" formTarget="" resourceType="JS" ruleDescription="Funcoes" ruleName="Funcoes" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false">
+  <metadata scale="1" scrollx="625.4" scrolly="-14.799999999999955" target="=LE+)P5pH@T#N^CCkro5"/>
+  <block asynccall="false" colour="#fca03b" id="=LE+)P5pH@T#N^CCkro5" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-487" y="53">
+    <field name="NAME">informar_conversao</field>
+    <comment h="107" pinned="false" w="179">Esta função informar no console o resultado da cotação.</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#0088ee" dependencyby="=LE+)P5pH@T#N^CCkro5" id="vWIwX!LXWb.J{[[{Z{_3" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">valor</field>
+        <value name="VALUE">
+          <block asynccall="false" colour="#5ba58c" dependencyby="=LE+)P5pH@T#N^CCkro5" id="n+nSbYhT+1Vf7ZqL;Ts^" multilayer="false" namespace="cronapi.text.prompt" origintype="text_prompt_ext" output="true" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3Ecronapi.text.prompt%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20%20value%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.text.prompt%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.text.prompt%3C/a%3E%3C/div%3E%3C/div%3E" type="text_prompt_ext">
+            <mutation name="{{cronapi.text.prompt}}" type="NUMBER"/>
+            <field name="TYPE">NUMBER</field>
+            <value name="TEXT">
+              <shadow asynccall="false" colour="#5ba593" dependencyby="=LE+)P5pH@T#N^CCkro5" id="=X?ycFi@Sj;Av92djU5r" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">Informe o valor a ser convertido: </field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block asynccall="false" colour="#0088ee" dependencyby="=LE+)P5pH@T#N^CCkro5" id="AbLw46vB.LqtfH,8GyT3" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+            <field name="VAR">cotacao</field>
+            <value name="VALUE">
+              <block asynccall="false" colour="#5ba58c" dependencyby="=LE+)P5pH@T#N^CCkro5" id="VKR)-}_9`izg@jB*Y95s" multilayer="false" namespace="cronapi.text.prompt" origintype="text_prompt_ext" output="true" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3Ecronapi.text.prompt%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20%20value%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.text.prompt%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.text.prompt%3C/a%3E%3C/div%3E%3C/div%3E" type="text_prompt_ext">
+                <mutation name="{{cronapi.text.prompt}}" type="NUMBER"/>
+                <field name="TYPE">NUMBER</field>
+                <value name="TEXT">
+                  <shadow asynccall="false" colour="#5ba593" dependencyby="=LE+)P5pH@T#N^CCkro5" id="~gtvz|dyU~Pc{a4Bd6o)" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT">Informe o valor da cotação do dia: </field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block asynccall="false" colour="#0088ee" dependencyby="=LE+)P5pH@T#N^CCkro5" id="^[=t6;eknv;R9n}}hf^#" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                <field name="VAR">conversao</field>
+                <value name="VALUE">
+                  <block asynccall="false" colour="#fca03b" dependencyby="=LE+)P5pH@T#N^CCkro5" id="W~uy,Wngot?M`M=8IRO`" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;converter_dolar_em_real&quot; e usa seu retorno." type="procedures_callreturn">
+                    <mutation name="converter_dolar_em_real" return-raw-type="undefined">
+                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="valor"/>
+                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="cotacao"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block asynccall="false" colour="#0088ee" dependencyby="=LE+)P5pH@T#N^CCkro5" id="y`L9tRO{qya1cAh0qRL{" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">valor</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block asynccall="false" colour="#0088ee" dependencyby="=LE+)P5pH@T#N^CCkro5" id=":u/-G?4WGo2wA}2DY!I0" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">cotacao</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block asynccall="false" colour="#5ba58c" dependencyby="=LE+)P5pH@T#N^CCkro5" id="K0VHoTMp^zk7Th{{$@|[" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                    <value name="TEXT">
+                      <shadow asynccall="false" colour="#5ba593" dependencyby="=LE+)P5pH@T#N^CCkro5" id="{{)P}spq@5QxX4OI|4Le" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field name="TEXT">abc</field>
+                      </shadow>
+                      <block asynccall="false" colour="#0088ee" dependencyby="=LE+)P5pH@T#N^CCkro5" id="x?^3#O[zHHq~?.@q2.4D" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">conversao</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-345" y="148">
+    <mutation>
+      <arg name="valor"/>
+      <arg name="cotacao"/>
+    </mutation>
+    <field name="NAME">converter_dolar_em_real</field>
+    <comment h="80" pinned="false" w="160">Funcoes</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="1uHe0yNU)?9?y%|}lvtc" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">resultado</field>
+        <value name="VALUE">
+          <block asynccall="false" colour="#5b6da5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="+S8PLUI5xcWLSli3$kAI" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
+            <mutation items="2"/>
+            <field name="OP1">MULTIPLY</field>
+            <value name="ARG0">
+              <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="TgdP/FUGH(uwRi(PHe;{" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field name="VAR">valor</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="%]hvJf?q.hqXsh[A!{l`" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field name="VAR">cotacao</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="OTV4P|^M+*U3awd}iZ=g" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+        <field name="VAR">resultado</field>
+      </block>
+    </value>
+  </block>
+</blockly>
