@@ -1,5 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly audit="false" bpmnAble="false" formTarget="" resourceType="JS" ruleDescription="Matematica" ruleName="Matematica" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false">
-  <metadata scale="1" scrollx="488.4000000000002" scrolly="-59.100000000000136" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <metadata scale="1" scrollx="614.3999999999999" scrolly="38.100000000000136" target="fk=VUuwfn6.WiUN[JML#"/>
+  <block asynccall="false" colour="#fca03b" id="fk=VUuwfn6.WiUN[JML#" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-577" y="-7">
+    <field name="NAME">verificar_primo</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#0088ee" dependencyby="fk=VUuwfn6.WiUN[JML#" id=";Msbs|v%=]C85Lzg(QBs" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">numero</field>
+        <value name="VALUE">
+          <block asynccall="false" colour="#5b67a5" dependencyby="fk=VUuwfn6.WiUN[JML#" id="0HvJq/hjeQi1+I4}Cu{=" origintype="math_random_int" output="true" tooltip="Retorna um número inteiro entre os dois limites informados, inclusivo." type="math_random_int">
+            <value name="FROM">
+              <shadow asynccall="false" colour="#5b67a5" dependencyby="fk=VUuwfn6.WiUN[JML#" id="penB;BQB,-[cQba.e2sj" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <value name="TO">
+              <shadow asynccall="false" colour="#5b67a5" dependencyby="fk=VUuwfn6.WiUN[JML#" id="Ct5JLKcHsD8sByO*saVA" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                <field name="NUM">1000</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block asynccall="false" colour="#5ba58c" dependencyby="fk=VUuwfn6.WiUN[JML#" id="SeYLe-=QFUD}cs;v+lqa" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+            <value name="TEXT">
+              <shadow asynccall="false" colour="#5ba593" dependencyby="fk=VUuwfn6.WiUN[JML#" id="972Ws0:ftCDerHs$Ar=B" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block asynccall="false" colour="#0088ee" dependencyby="fk=VUuwfn6.WiUN[JML#" id="^#Oq@j}HS}eLtD3hcVV#" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field name="VAR">numero</field>
+              </block>
+            </value>
+            <next>
+              <block asynccall="false" colour="#5ba58c" dependencyby="fk=VUuwfn6.WiUN[JML#" id="XLDn6amS9,Lz^8))L.oE" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                <value name="TEXT">
+                  <shadow asynccall="false" colour="#5ba593" dependencyby="fk=VUuwfn6.WiUN[JML#" id="=l1RiuGo$y=T7tB|nS;N" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block asynccall="false" colour="#5b67a5" dependencyby="fk=VUuwfn6.WiUN[JML#" id="ENnNR)QN=`7?IFc1K3z|" origintype="math_number_property" output="true" tooltip="Verifica se um número é par, ímpar, inteiro, positivo, negativo, ou se é divisível por outro número.  Retorna verdadeiro ou falso." type="math_number_property">
+                    <mutation divisor_input="false"/>
+                    <field name="PROPERTY">PRIME</field>
+                    <value name="NUMBER_TO_CHECK">
+                      <shadow asynccall="false" colour="#5b67a5" dependencyby="fk=VUuwfn6.WiUN[JML#" id="}nCLfyZYS;56Lu(YFW;1" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">0</field>
+                      </shadow>
+                      <block asynccall="false" colour="#0088ee" dependencyby="fk=VUuwfn6.WiUN[JML#" id=")OtYh}tF4VWo@w2C+{(Y" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">numero</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
   <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
     <field name="NAME">calcular_imc</field>
     <comment h="80" pinned="false" w="160">Matematica</comment>
