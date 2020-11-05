@@ -1,6 +1,264 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly audit="false" bpmnAble="false" formTarget="" resourceType="JS" ruleDescription="Condicoes" ruleName="Condicoes" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false">
-  <metadata scale="1" scrollx="488.39999999999975" scrolly="7.0000000000001705" target="Anb:u5+^,0vLkL9QIqn5"/>
-  <block asynccall="false" colour="#fca03b" id="|F;*evg~n{$[4[gR[d8." origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-607" y="83">
+  <metadata scale="1" scrollx="567.3999999999997" scrolly="-20.39999999999992" target="Pz$i]!)kJJ+(0%pL9wnB"/>
+  <block asynccall="false" colour="#fca03b" id="Pz$i]!)kJJ+(0%pL9wnB" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-442" y="98">
+    <field name="NAME">reajustar_salario</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#0088ee" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="RC_lvw2**i^E^KkjL=o-" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">salario_atual</field>
+        <value name="VALUE">
+          <block asynccall="false" colour="#5ba58c" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="OtsuShJgN~$94$q7Mgg4" multilayer="false" namespace="cronapi.text.prompt" origintype="text_prompt_ext" output="true" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3Ecronapi.text.prompt%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20%20value%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.text.prompt%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.text.prompt%3C/a%3E%3C/div%3E%3C/div%3E" type="text_prompt_ext">
+            <mutation name="{{cronapi.text.prompt}}" type="NUMBER"/>
+            <field name="TYPE">NUMBER</field>
+            <value name="TEXT">
+              <shadow asynccall="false" colour="#5ba593" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="N^N_$qVj;LNUuk+;7L5n" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">Informe seu salário atual:</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block asynccall="false" colour="#5b80a5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="83Y1N4a7`+j%hqCVp46[" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+            <mutation else="1"/>
+            <value name="IF0">
+              <block asynccall="false" colour="#5b80a5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="1pBjB/8(5rpGEDf9sOoO" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                <field name="OP">GTE</field>
+                <value name="A">
+                  <block asynccall="false" colour="#0088ee" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="iJZ9=SP$J7:Q?;A~?tF," origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">salario_atual</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block asynccall="false" colour="#5b67a5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="xHS+;.QyY.#XGi*f!g;8" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block asynccall="false" colour="#5b80a5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="#q|l{G`Ah7=(v3%F-;]H" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                <mutation else="1" elseif="2"/>
+                <value name="IF0">
+                  <block asynccall="false" colour="#5b80a5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="~:kH4WSzRv#t#akkMK@^" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                    <field name="OP">LTE</field>
+                    <value name="A">
+                      <block asynccall="false" colour="#0088ee" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="ygxJ0y~0ew*DW=?A5H]{" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">salario_atual</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block asynccall="false" colour="#5b67a5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="sQ~cKGm9[[BB|aV64C@4" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">1045</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block asynccall="false" colour="#0088ee" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="O-8M@Z%nb#k)NP|P.pN=" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                    <field name="VAR">novo_salario</field>
+                    <value name="VALUE">
+                      <block asynccall="false" colour="#5b6da5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="*|xm4b60A@6fQTXoWz{W" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
+                        <mutation items="2"/>
+                        <field name="OP1">MULTIPLY</field>
+                        <value name="ARG0">
+                          <block asynccall="false" colour="#0088ee" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="BK6[2LO;jDD@f38{KawN" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">salario_atual</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block asynccall="false" colour="#5b67a5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="cxCc$R%M^/Oi@K%aI95D" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">1.1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block asynccall="false" colour="#5ba58c" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="V|(ZJ0u(qy%/(/;$IkKV" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                        <value name="TEXT">
+                          <shadow asynccall="false" colour="#5ba593" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="l:x%B0rSCsD{/P#A/iIc" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">Salário inferior a 0</field>
+                          </shadow>
+                          <block asynccall="false" colour="#5ba58c" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="91JjN|sU?H@o,juF71sN" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+                            <mutation items="2"/>
+                            <value name="ADD0">
+                              <block asynccall="false" colour="#5ba593" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="+g.w1455Ki%4@Ah17o:I" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">Seu salário foi reajustado em 10%: </field>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block asynccall="false" colour="#0088ee" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="|;ntIQ7N!41}grFU5]46" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">novo_salario</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <value name="IF1">
+                  <block asynccall="false" colour="#5b80a5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="bD`]o}N;M~V)2Re.zn6P" origintype="logic_operation" output="true" tooltip="Retorna verdadeiro se ambas as entradas forem iguais." type="logic_operation">
+                    <mutation items="2"/>
+                    <field name="OP1">AND</field>
+                    <value name="ARG0">
+                      <block asynccall="false" colour="#5b80a5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="x6fsAbQ*IaLCDV*S;V{b" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                        <field name="OP">GT</field>
+                        <value name="A">
+                          <block asynccall="false" colour="#0088ee" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="X}Xh~lJ!mz1/ywgTxb@-" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">salario_atual</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block asynccall="false" colour="#5b67a5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="bWe=$d,2)k6k{BE6rEfM" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">1045</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block asynccall="false" colour="#5b80a5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="aG3f!bFG~Uaa)T))EBE!" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                        <field name="OP">LTE</field>
+                        <value name="A">
+                          <block asynccall="false" colour="#0088ee" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="_zIdQqd)2Hgcu2^D|==^" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">salario_atual</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block asynccall="false" colour="#5b67a5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="eAyr[(5UZbz)vM$+UmPZ" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">4180</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO1">
+                  <block asynccall="false" colour="#0088ee" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="=Do2o[h4Qp]tg=Zthg{6" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                    <field name="VAR">novo_salario</field>
+                    <value name="VALUE">
+                      <block asynccall="false" colour="#5b6da5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="$rXe@1q(@g?qqo+D-.M," origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
+                        <mutation items="2"/>
+                        <field name="OP1">MULTIPLY</field>
+                        <value name="ARG0">
+                          <block asynccall="false" colour="#0088ee" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="1)Y;!z2CbL2Xu:D{X4Di" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">salario_atual</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block asynccall="false" colour="#5b67a5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="~5_nRWbpUGR(A9q#m/?c" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">1.05</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block asynccall="false" colour="#5ba58c" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="we9axHH;LMY)dfh?~99K" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                        <value name="TEXT">
+                          <shadow asynccall="false" colour="#5ba593" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="l:x%B0rSCsD{/P#A/iIc" origintype="text" output="true" tooltip="function () { [native code] }" type="text" xmlns="">
+                            <field name="TEXT">Salário inferior a 0</field>
+                          </shadow>
+                          <block asynccall="false" colour="#5ba58c" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id=":6aawds.[*Y-tS=1LD[o" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+                            <mutation items="2"/>
+                            <value name="ADD0">
+                              <block asynccall="false" colour="#5ba593" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="seV`2RJV`NF*bF.f=(JW" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">Seu salário foi reajustado em 5%: </field>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block asynccall="false" colour="#0088ee" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="x|sJf~Wub8-IUpHY{g*Y" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">novo_salario</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <value name="IF2">
+                  <block asynccall="false" colour="#5b80a5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id=",vKgawTVuk(GRk7XmViS" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                    <field name="OP">LTE</field>
+                    <value name="A">
+                      <block asynccall="false" colour="#0088ee" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="6-IRcl9iCI33NCbgh#aS" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">salario_atual</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block asynccall="false" colour="#5b67a5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="fO$5h*4O.#JrYN:9x{tN" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                        <field name="NUM">15000</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO2">
+                  <block asynccall="false" colour="#0088ee" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="4o$MtT1pAH}[nU{uIdh-" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                    <field name="VAR">novo_salario</field>
+                    <value name="VALUE">
+                      <block asynccall="false" colour="#5b6da5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="`ff=|a=.73^t+zTGY/mt" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
+                        <mutation items="2"/>
+                        <field name="OP1">MULTIPLY</field>
+                        <value name="ARG0">
+                          <block asynccall="false" colour="#0088ee" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="x=H/,mes7d,cAeq+c89N" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">salario_atual</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block asynccall="false" colour="#5b67a5" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="I2|@]WI2WE?ZQqh=Og!Z" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">1.025</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block asynccall="false" colour="#5ba58c" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="nj25+SCgH2+cDbaAD6lr" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                        <value name="TEXT">
+                          <shadow asynccall="false" colour="#5ba593" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="l:x%B0rSCsD{/P#A/iIc" origintype="text" output="true" tooltip="function () { [native code] }" type="text" xmlns="">
+                            <field name="TEXT">Salário inferior a 0</field>
+                          </shadow>
+                          <block asynccall="false" colour="#5ba58c" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="#ECI{ebqpYZu=%n}M;Dq" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+                            <mutation items="2"/>
+                            <value name="ADD0">
+                              <block asynccall="false" colour="#5ba593" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="U7q5SHb#u-/TB$@`^u#G" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">Seu salário foi reajustado em 2.5%: </field>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block asynccall="false" colour="#0088ee" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id=".-IA%r7Z1XP@k3QSMjmQ" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">novo_salario</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block asynccall="false" colour="#5ba58c" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="?:)B15z]Jf.YybRVBRdc" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                    <value name="TEXT">
+                      <shadow asynccall="false" colour="#5ba593" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="Um6WMn,~Bwc{QWyA9Z0N" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field name="TEXT">Salario acima do teto, consulte o RH.</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block asynccall="false" colour="#5ba58c" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="ZMh33#;GDB8RtZ:,_OT+" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                <value name="TEXT">
+                  <shadow asynccall="false" colour="#5ba593" dependencyby="Pz$i]!)kJJ+(0%pL9wnB" id="~kI1u+,urrQ4gj?D5!HR" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT">Salário inferior a 0</field>
+                  </shadow>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" id="|F;*evg~n{$[4[gR[d8." origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-508" y="138">
     <mutation>
       <arg name="n1"/>
       <arg name="n2"/>
@@ -58,7 +316,7 @@
       </block>
     </value>
   </block>
-  <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
+  <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-266" y="201">
     <field name="NAME">informar_resultado</field>
     <comment h="80" pinned="false" w="160">Condicoes</comment>
     <statement name="STACK">
