@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cronapi-js": "^2.7.8",
+    "cronapi-js": "^2.7.9",
     "cronapp-common-js": "^2.7.2",
     "cronapp-framework-mobile-js": "^2.7.4",
     "cronapp-lib-js": "^2.7.7"
