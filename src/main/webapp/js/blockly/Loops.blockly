@@ -1,5 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly audit="false" bpmnAble="false" formTarget="" resourceType="JS" ruleDescription="Loops" ruleName="Loops" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false">
-  <metadata scale="1" scrollx="489.4000000000018" scrolly="8.000000000000114" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <metadata scale="1" scrollx="610.4000000000001" scrolly="79.89999999999992" target="K7CsWeV}%Nf7l)cY8Ee*"/>
+  <block asynccall="false" colour="#fca03b" id="K7CsWeV}%Nf7l)cY8Ee*" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-577" y="-52">
+    <field name="NAME">imprimir_tabuadas</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#5ba55b" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="PMe:ZEe!0R)ZbOR-xk1I" origintype="controls_for" output="false" tooltip="Faça algumas instruções várias vezes." type="controls_for">
+        <field name="VAR">i</field>
+        <value name="FROM">
+          <shadow asynccall="false" colour="#5b67a5" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="[a~0HAHpct/:x;Las`DP" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <value name="TO">
+          <shadow asynccall="false" colour="#5b67a5" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="6cl%t6k~0V(08=RL%%dB" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+            <field name="NUM">10</field>
+          </shadow>
+        </value>
+        <value name="BY">
+          <shadow asynccall="false" colour="#5b67a5" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="]mcrz}.8vgwrNj(*qg6`" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block asynccall="false" colour="#5ba55b" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="c=sD6vtq4#R+TM2lxFr9" origintype="controls_for" output="false" tooltip="Faça algumas instruções várias vezes." type="controls_for">
+            <field name="VAR">j</field>
+            <value name="FROM">
+              <shadow asynccall="false" colour="#5b67a5" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="#$M42ucMd2ERsZoZVKxy" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="TO">
+              <shadow asynccall="false" colour="#5b67a5" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="}7BP%`Ar}$Et3t-cYW`$" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                <field name="NUM">10</field>
+              </shadow>
+            </value>
+            <value name="BY">
+              <shadow asynccall="false" colour="#5b67a5" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="=.#yw$[oAUk%baPSj-::" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <statement name="DO">
+              <block asynccall="false" colour="#0088ee" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="J`XMh:eD}Qvq-oPXR!mu" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                <field name="VAR">resultado_tabuada</field>
+                <value name="VALUE">
+                  <block asynccall="false" colour="#5b6da5" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="^i//.o05M8Z@s-tatp|W" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
+                    <mutation items="2"/>
+                    <field name="OP1">MULTIPLY</field>
+                    <value name="ARG0">
+                      <block asynccall="false" colour="#0088ee" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="gFnX}n!Za9ac*_A`fsf$" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">i</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block asynccall="false" colour="#0088ee" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id=")mv=WiD1qw^,L_mUz(G1" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">j</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block asynccall="false" colour="#5ba58c" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="{8~T5]MgX_X%qoyA5Dau" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                    <value name="TEXT">
+                      <shadow asynccall="false" colour="#5ba593" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="A;TDWPZZr6^em$rwiVm~" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field name="TEXT">abc</field>
+                      </shadow>
+                      <block asynccall="false" colour="#5ba58c" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="(,;e6ty#erUpDuOweowK" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+                        <mutation items="5"/>
+                        <value name="ADD0">
+                          <block asynccall="false" colour="#0088ee" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="~o_mi?ginaCklx:n~TrA" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">i</field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block asynccall="false" colour="#5ba593" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="N?WYVdtz20EmfrU!/GA/" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">x</field>
+                          </block>
+                        </value>
+                        <value name="ADD2">
+                          <block asynccall="false" colour="#0088ee" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="vUD~9#$/H.)qMg-ap8yk" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">j</field>
+                          </block>
+                        </value>
+                        <value name="ADD3">
+                          <block asynccall="false" colour="#5ba593" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="}G?D^,z+U9=h0JtaE!u/" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">=</field>
+                          </block>
+                        </value>
+                        <value name="ADD4">
+                          <block asynccall="false" colour="#0088ee" dependencyby="K7CsWeV}%Nf7l)cY8Ee*" id="$U^i;0uz/MY0AwryLcYH" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">resultado_tabuada</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
   <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
     <field name="NAME">imprimir_tabuada_com_while</field>
     <comment h="80" pinned="false" w="160">Loops</comment>
