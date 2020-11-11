@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly audit="false" bpmnAble="false" formTarget="" resourceType="JS" ruleDescription="Loops" ruleName="Loops" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false">
-  <metadata scale="1" scrollx="610.4000000000001" scrolly="79.89999999999992" target="K7CsWeV}%Nf7l)cY8Ee*"/>
-  <block asynccall="false" colour="#fca03b" id="K7CsWeV}%Nf7l)cY8Ee*" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-577" y="-52">
+  <metadata scale="1" scrollx="565.4000000000001" scrolly="17.899999999999977" target="+./h_Tf,jpD(YOL!?H!G"/>
+  <block asynccall="false" colour="#fca03b" id="K7CsWeV}%Nf7l)cY8Ee*" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-554" y="-34">
     <field name="NAME">imprimir_tabuadas</field>
     <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
     <statement name="STACK">
@@ -99,6 +99,137 @@
             </statement>
           </block>
         </statement>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" id="+./h_Tf,jpD(YOL!?H!G" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-427" y="68">
+    <field name="NAME">adivinhar</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#0088ee" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="T%Ofl%AKtv`p^$67^BDz" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">numero_aleatorio</field>
+        <value name="VALUE">
+          <block asynccall="false" colour="#5b67a5" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="ZYU4O:s1f?nhy`r?T=Lb" origintype="math_random_int" output="true" tooltip="Retorna um número inteiro entre os dois limites informados, inclusivo." type="math_random_int">
+            <value name="FROM">
+              <shadow asynccall="false" colour="#5b67a5" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="fI#wc?Dfy6bn*#(JBjAT" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <value name="TO">
+              <shadow asynccall="false" colour="#5b67a5" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="Kn4;bVFP+UJ2FTIiFLn#" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                <field name="NUM">10</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block asynccall="false" colour="#5ba55b" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="hjx[^_VRdbU$BD;9Auu*" origintype="controls_whileUntil" output="false" tooltip="function () { [native code] }" type="controls_whileUntil">
+            <field name="MODE">WHILE</field>
+            <value name="BOOL">
+              <block asynccall="false" colour="#5b80a5" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="(uO#Y]Nc7%SVJo-DITQP" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                <field name="OP">NEQ</field>
+                <value name="A">
+                  <block asynccall="false" colour="#0088ee" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="Q/_k]u~%YE!j_9(Z1J|^" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">palpite</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block asynccall="false" colour="#0088ee" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="($+qy6$R,[Y$DN)Z~ZeI" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">numero_aleatorio</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO">
+              <block asynccall="false" colour="#0088ee" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="xqZcBu${FNWZ8:p%bmU!" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                <field name="VAR">palpite</field>
+                <value name="VALUE">
+                  <block asynccall="false" colour="#5ba58c" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="%8ipyyak(b,6c~q}]Hdn" multilayer="false" namespace="cronapi.text.prompt" origintype="text_prompt_ext" output="true" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3Ecronapi.text.prompt%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20%20value%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.text.prompt%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.text.prompt%3C/a%3E%3C/div%3E%3C/div%3E" type="text_prompt_ext">
+                    <mutation name="{{cronapi.text.prompt}}" type="NUMBER"/>
+                    <field name="TYPE">NUMBER</field>
+                    <value name="TEXT">
+                      <shadow asynccall="false" colour="#5ba593" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="kMI^8xT4@)u?+4$LawE!" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field name="TEXT">Informe seu palpite (1 a 10)</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block asynccall="false" colour="#5b80a5" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="=P)BmEK^L@I#`fg+n=mU" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                    <mutation else="1"/>
+                    <value name="IF0">
+                      <block asynccall="false" colour="#5b80a5" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="2Z/n3I`;1JoYlj}O^b|j" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block asynccall="false" colour="#0088ee" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="a!^daMst#`Q%)kkPyE6." origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">palpite</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block asynccall="false" colour="#0088ee" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="@;Dh@Y.riCXN/CwG(T[M" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">numero_aleatorio</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block asynccall="false" colour="#5ba58c" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="+K2;j4)YAMDy=4b+.S[|" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                        <value name="TEXT">
+                          <shadow asynccall="false" colour="#5ba593" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="yS~()i;fH$kcB7[8=7^%" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">Parabéns, você acertou o número sorteado!</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block asynccall="false" colour="#5ba55b" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="mVD$[6}?H7!TMt?xLKQO" origintype="controls_flow_statements" output="false" tooltip="function () { [native code] }" type="controls_flow_statements">
+                            <field name="FLOW">BREAK</field>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block asynccall="false" colour="#5b80a5" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="{nk$Ck_M)k4UYGD(gk#T" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                        <mutation else="1"/>
+                        <value name="IF0">
+                          <block asynccall="false" colour="#5b80a5" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="vwh.KF62Nt*4{/v91DCu" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                            <field name="OP">GT</field>
+                            <value name="A">
+                              <block asynccall="false" colour="#0088ee" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="5(/|cq7We(97-xmhhkW2" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">palpite</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block asynccall="false" colour="#0088ee" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="zGHuf)%m:Q#a82]@dq8#" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">numero_aleatorio</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block asynccall="false" colour="#5ba58c" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="v2f_$m9O9kcnv`:dP,;p" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                            <value name="TEXT">
+                              <shadow asynccall="false" colour="#5ba593" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="/wUS$)COdJX!{tV8OvmD" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">O número é menor</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </statement>
+                        <statement name="ELSE">
+                          <block asynccall="false" colour="#5ba58c" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="fo1iUNSfJqC]qk}8arBu" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                            <value name="TEXT">
+                              <shadow asynccall="false" colour="#5ba593" dependencyby="+./h_Tf,jpD(YOL!?H!G" id="{1wkIJ0uJzG5egTQuRN^" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">O número é maior</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </statement>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
       </block>
     </statement>
   </block>
