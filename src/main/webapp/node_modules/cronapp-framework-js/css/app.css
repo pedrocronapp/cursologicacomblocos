@@ -205,3 +205,22 @@ a {
 .nav.nav-tabs li.active {
     background-color: #3b448e;
 }
+
+.float-left-desktop {
+    float:left;
+}
+
+@media only screen and (max-width: 767px) {
+    #navbar cron-dynamic-menu .navbar-nav {
+        margin: 7.5px 0;
+        width: 100%;
+    }
+    
+    .crn-navigator-horizontal #navbar, .float-left-desktop {
+        float: none;
+    }
+    
+    img.user-avatar {
+        margin-left: 0;
+    }
+}

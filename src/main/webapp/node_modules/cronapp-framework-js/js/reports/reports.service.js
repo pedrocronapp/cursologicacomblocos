@@ -345,7 +345,7 @@
       Pace.options.minTime = 1750;
       Pace.options.maxProgressPerFrame = 1;
       Pace.options.ghostTime = 120000;
-      Pace.restart();
+      let refreshPaceUntilLoad = setInterval( () => Pace.restart(), 2500);
 
       scriptsStimulsoft.forEach(function(url, idx) {
         this.loadScript(url, function(success) {
@@ -353,6 +353,7 @@
           if (!success)
             loadedAllSuccess = false;
           if (totalAdded == total) {
+            clearInterval(refreshPaceUntilLoad);
             Pace.options.initialRate = 0.03;
             Pace.options.minTime = 250;
             Pace.options.maxProgressPerFrame = 20;

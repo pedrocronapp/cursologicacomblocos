@@ -199,10 +199,14 @@ var app = (function() {
             prefix: 'i18n/locale_',
             suffix: '.json'
           },
-            {
-              prefix: 'node_modules/cronapp-framework-js/i18n/locale_',
-              suffix: '.json'
-            }]
+          {
+            prefix: 'node_modules/cronapp-framework-js/i18n/locale_',
+            suffix: '.json'
+          },
+          {
+            prefix: 'node_modules/cronapi-js/i18n/locale_',
+            suffix: '.json'
+          }]
         });
 
         $translateProvider

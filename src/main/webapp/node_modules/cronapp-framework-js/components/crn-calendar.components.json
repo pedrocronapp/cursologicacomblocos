@@ -1,0 +1,64 @@
+{
+  "name": "crn-cron-calendar",
+  "onDrop": "openEditor",
+  "onDoubleClick": "openEditor",
+  "text_pt_BR": "Calendário",
+  "text_en_US": "Calendar",
+  "order": 2,
+  "class": "adjust-icon mdi mdi-calendar-month",
+  "designTimeDynamic": true,
+  "designTimeHTMLURL": "src/main/webapp/node_modules/cronapp-framework-js/components/templates/cron-calendar.designtime.html",
+  "designTimeSelector": "cron-calendar",
+  "templateURL": "src/main/webapp/node_modules/cronapp-framework-js/components/templates/cron-calendar.template.html",
+  "properties": {
+    "class": {
+      "order": 9999
+    },
+    "id": {
+      "order": 1
+    }
+  },
+  "childrenProperties": [
+    {
+      "name": "options",
+      "displayName_pt_BR": "Configurações",
+      "displayName_en_US": "Configuration",
+      "removable": false,
+      "global": "true",
+      "selector": "cron-calendar",
+      "type": "text",
+      "order": 1,
+      "mandatory": true
+    },
+    {
+      "name": "ng-model",
+      "selector": "cron-calendar",
+      "onSave": "javascript:function() { var result = arguments[0]; if (result.indexOf('.') == -1 && result.trim().length > 0 ) { result = 'vars.'+result;  }  return result; }",
+      "onDisplay": "javascript:function() { return arguments[0].replace('vars.',''); }",
+      "type": "text",
+      "order": 2,
+      "mandatory": true
+    },
+    {
+      "name": "ng-on-selection-change",
+      "selector": "cron-calendar",
+      "order": 1,
+      "displayName_pt_BR": "Ao Mudar Seleção",
+      "displayName_en_US": "On Selection Change",
+      "removable": true,
+      "global": false,
+      "type": "event"
+    },
+    {
+      "name": "ng-on-navigate-view-change",
+      "selector": "cron-calendar",
+      "order": 2,
+      "displayName_pt_BR": "Ao Navegar Pelo Calendário",
+      "displayName_en_US": "On Calendar Navigates",
+      "removable": true,
+      "global": false,
+      "type": "event"
+    }
+  ],
+  "styles": []
+}

@@ -114,6 +114,13 @@
       "name": "ng-required",
       "selector": "cron-multi-select",
       "type": "logic"
+    },
+    {
+      "name": "crn-readonly",
+      "selector": "cron-multi-select",
+      "type": "logic",
+      "displayName_pt_BR": "Apenas Leitura",
+      "displayName_en_US": "Read Only"
     }
   ]
 }
