@@ -1,6 +1,338 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly audit="false" bpmnAble="false" formTarget="" resourceType="JS" ruleDescription="Listas" ruleName="Listas" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false">
-  <metadata scale="1" scrollx="491.4" scrolly="-294" target="Anb:u5+^,0vLkL9QIqn5"/>
-  <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
+  <metadata scale="1" scrollx="925.4000000000001" scrolly="188.8" target="!8^3dIpIHuP7xE}Jzm~x"/>
+  <block asynccall="false" colour="#fca03b" id="xeyKM7E#!M/2Pf,ngf_3" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-1417" y="-112">
+    <field name="NAME">imprimir_resultador_escolar</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="1M9g.D+j3xZz7D*hwh?," origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">contador</field>
+        <value name="VALUE">
+          <block asynccall="false" colour="#5b67a5" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="h1c38M1J[E(u0[jK)=sk" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <next>
+          <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="2`U=TFdIy8RFH*8j3{+m" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+            <field name="VAR">lista_notas</field>
+            <value name="VALUE">
+              <block asynccall="false" colour="#745ba5" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="{E?L;jKy9;#Y1JA~Xvw6" origintype="lists_create_with" output="true" tooltip="Cria uma lista com a quantidade de itens informada." type="lists_create_with">
+                <mutation items="0"/>
+              </block>
+            </value>
+            <next>
+              <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="n{Bl@(WYie]G:G3upWIN" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                <field name="VAR">quantidade_notas</field>
+                <value name="VALUE">
+                  <block asynccall="false" colour="#5ba58c" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="=cQufBAhvHfkd^l,8QYk" multilayer="false" namespace="cronapi.text.prompt" origintype="text_prompt_ext" output="true" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3Ecronapi.text.prompt%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20%20value%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.text.prompt%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.text.prompt%3C/a%3E%3C/div%3E%3C/div%3E" type="text_prompt_ext">
+                    <mutation name="{{cronapi.text.prompt}}" type="NUMBER"/>
+                    <field name="TYPE">NUMBER</field>
+                    <value name="TEXT">
+                      <shadow asynccall="false" colour="#5ba593" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="g0OP.f!_YBg`|h*~6=Mz" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field name="TEXT">Informe quantas notas você deseja inserir: </field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block asynccall="false" colour="#5ba55b" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="~k7aHY(W8_r{aOFd)iOo" origintype="controls_whileUntil" output="false" tooltip="function () { [native code] }" type="controls_whileUntil">
+                    <field name="MODE">WHILE</field>
+                    <value name="BOOL">
+                      <block asynccall="false" colour="#5b80a5" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="by,jV5#ew7RyW.j7b(W7" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                        <field name="OP">LTE</field>
+                        <value name="A">
+                          <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="r|/SBslwq;smLwyA6t8l" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">contador</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="TH0ga*bt2Xv/c2RN7`Nh" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">quantidade_notas</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="//UFGmrinveAG?*UZg9J" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                        <field name="VAR">nota</field>
+                        <value name="VALUE">
+                          <block asynccall="false" colour="#5ba58c" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="J7DJ#W[K4^IouDmnywnL" multilayer="false" namespace="cronapi.text.prompt" origintype="text_prompt_ext" output="true" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3Ecronapi.text.prompt%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20%20value%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.text.prompt%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.text.prompt%3C/a%3E%3C/div%3E%3C/div%3E" type="text_prompt_ext">
+                            <mutation name="{{cronapi.text.prompt}}" type="NUMBER"/>
+                            <field name="TYPE">NUMBER</field>
+                            <value name="TEXT">
+                              <shadow asynccall="false" colour="#5ba593" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="U`qeuki%:RgpJIilo^n^" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">abc</field>
+                              </shadow>
+                              <block asynccall="false" colour="#5ba58c" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="o[T`#~t%;Sa|d=NZJ7W=" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+                                <mutation items="2"/>
+                                <value name="ADD0">
+                                  <block asynccall="false" colour="#5ba593" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="1i7ilYh9rXibHL^7v])}" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                    <field name="TEXT">Informe a nota </field>
+                                  </block>
+                                </value>
+                                <value name="ADD1">
+                                  <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="8ioTm$Mp~oF4O}-}{7Cv" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                    <field name="VAR">contador</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block asynccall="false" colour="#745ba5" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="2WFsZAhzHnVj)~PLOMX?" origintype="lists_setIndex" output="false" tooltip="function() {&#10;      var mode = thisBlock.getFieldValue('MODE');&#10;      var where = thisBlock.getFieldValue('WHERE');&#10;      var tooltip = '';&#10;      switch(mode + ' ' + where) {&#10;      case 'SET FROM_START':&#10;      case 'SET FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_FROM;&#10;        break;&#10;      case 'SET FIRST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_FIRST;&#10;        break;&#10;      case 'SET LAST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_LAST;&#10;        break;&#10;      case 'SET RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_SET_RANDOM;&#10;        break;&#10;      case 'INSERT FROM_START':&#10;      case 'INSERT FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_FROM;&#10;        break;&#10;      case 'INSERT FIRST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST;&#10;        break;&#10;      case 'INSERT LAST':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_LAST;&#10;        break;&#10;      case 'INSERT RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM;&#10;        break;&#10;      }&#10;      if(where == 'FROM_START' || where == 'FROM_END') {&#10;        tooltip += '  ' + Blockly.Msg.LISTS_INDEX_FROM_START_TOOLTIP.replace('%1', thisBlock.workspace.options.oneBasedIndex ? '#1' : '#0');&#10;      }&#10;      return tooltip;&#10;    }" type="lists_setIndex">
+                            <mutation at="true"/>
+                            <field name="MODE">INSERT</field>
+                            <field name="WHERE">FROM_START</field>
+                            <value name="LIST">
+                              <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="|{xn%?$I5Q)I?Lit?NTP" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">lista_notas</field>
+                              </block>
+                            </value>
+                            <value name="AT">
+                              <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="W4cXM^xVf]KVp:+_Y%-E" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">contador</field>
+                              </block>
+                            </value>
+                            <value name="TO">
+                              <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="eCQABHc;t_C%Oarcw1k-" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">nota</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="h+T9d_EOSX8Gu`rdqDjI" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                <field name="VAR">contador</field>
+                                <value name="VALUE">
+                                  <block asynccall="false" colour="#5b6da5" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="l/$G[pPbP~M{eGwMK42T" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
+                                    <mutation items="2"/>
+                                    <field name="OP1">ADD</field>
+                                    <value name="ARG0">
+                                      <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="L]p$vaU]V/S@]N%-!,l]" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                        <field name="VAR">contador</field>
+                                      </block>
+                                    </value>
+                                    <value name="ARG1">
+                                      <block asynccall="false" colour="#5b67a5" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="c6A)w{j.7DHzT]oJ(Muo" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                        <field name="NUM">1</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block asynccall="false" colour="#5ba58c" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="8ObqPQ9Xexp$KbOqxhy0" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                        <value name="TEXT">
+                          <shadow asynccall="false" colour="#5ba593" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="$,B?o5N4bX@A#@awK]!c" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">abc</field>
+                          </shadow>
+                          <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="8MMhE_%KRnTCqJ(KMEUx" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">lista_notas</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="rhCK4R[*Y*8)9WqezCP*" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                            <field name="VAR">resultado_media</field>
+                            <value name="VALUE">
+                              <block asynccall="false" colour="#fca03b" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="3R5BorGLag)0t*Xtwo?H" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;calcular_media&quot; e usa seu retorno." type="procedures_callreturn">
+                                <mutation name="calcular_media" return-raw-type="undefined">
+                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="notas"/>
+                                </mutation>
+                                <value name="ARG0">
+                                  <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="`p}uqrah@]^9aaIPh0ic" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                    <field name="VAR">lista_notas</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block asynccall="false" colour="#5b80a5" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="~06gzX*R16KMmi6gC?SH" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                                <mutation else="1"/>
+                                <value name="IF0">
+                                  <block asynccall="false" colour="#5b80a5" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="eq+wGNFWww@gwlytR;=l" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                                    <field name="OP">GTE</field>
+                                    <value name="A">
+                                      <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="(c$wHO%):k=UVF2GPIlj" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                        <field name="VAR">resultado_media</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block asynccall="false" colour="#5b67a5" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="mbQQIt=5)#]482T6=m:B" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                        <field name="NUM">6</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block asynccall="false" colour="#5ba58c" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="CmMCzumQL|@q)R,96^AP" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                                    <value name="TEXT">
+                                      <shadow asynccall="false" colour="#5ba593" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="3?|yuS3:19XtVPSy*KOn" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                        <field name="TEXT">abc</field>
+                                      </shadow>
+                                      <block asynccall="false" colour="#5ba58c" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="b]y_6w(`R,M|QGflmQ#^" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+                                        <mutation items="2"/>
+                                        <value name="ADD0">
+                                          <block asynccall="false" colour="#5ba593" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="9f8uDK{de}c*co8]OoN8" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                            <field name="TEXT">Parabéns, você foi aprovado com média: </field>
+                                          </block>
+                                        </value>
+                                        <value name="ADD1">
+                                          <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="|~FALswgXkx}LGQ0Zsrx" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                            <field name="VAR">resultado_media</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <statement name="ELSE">
+                                  <block asynccall="false" colour="#5ba58c" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id=":hnWhnJItYaRrr^r%Dx." origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                                    <value name="TEXT">
+                                      <shadow asynccall="false" colour="#5ba593" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="x0A}MjL9d1WUYsif4SPO" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                        <field name="TEXT">abc</field>
+                                      </shadow>
+                                      <block asynccall="false" colour="#5ba58c" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="=I#{1sjSgrB5zV`crk{w" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+                                        <mutation items="2"/>
+                                        <value name="ADD0">
+                                          <block asynccall="false" colour="#5ba593" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="tv8_U!3Aq?Dr2ubd-nBe" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                            <field name="TEXT">Você foi reprovado com média:</field>
+                                          </block>
+                                        </value>
+                                        <value name="ADD1">
+                                          <block asynccall="false" colour="#0088ee" dependencyby="xeyKM7E#!M/2Pf,ngf_3" id="jJ,+Q$+!E|PyCvK7BQ?(" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                            <field name="VAR">resultado_media</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" id="!8^3dIpIHuP7xE}Jzm~x" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-787" y="-112">
+    <mutation>
+      <arg name="notas"/>
+    </mutation>
+    <field name="NAME">calcular_media</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#0088ee" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id="s||gadY;ft5sw0.0/8[V" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">soma_notas</field>
+        <value name="VALUE">
+          <block asynccall="false" colour="#5b67a5" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id="6hRKcJpZEN6N[ec^SS%/" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block asynccall="false" colour="#5ba55b" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id="qR=[:57:U3C4{:WBwX}q" origintype="controls_for" output="false" tooltip="Faça algumas instruções várias vezes." type="controls_for">
+            <field name="VAR">i</field>
+            <value name="FROM">
+              <shadow asynccall="false" colour="#5b67a5" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id="PuKA+^,h|!3e:E7IGSFx" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <value name="TO">
+              <shadow asynccall="false" colour="#5b67a5" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id="Rw9VkaLw%d_!o!#]SWNE" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                <field name="NUM">10</field>
+              </shadow>
+              <block asynccall="false" colour="#745ba5" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id="~t)Y2QvQ)(U@YEWazdIf" origintype="lists_length" output="true" tooltip="Retorna o tamanho de uma lista." type="lists_length">
+                <value name="VALUE">
+                  <block asynccall="false" colour="#0088ee" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id="e*.;jC7bC%W_C{/KN.?1" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">notas</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="BY">
+              <shadow asynccall="false" colour="#5b67a5" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id="WU.I/vT0K#/L/!$0^e^]" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <statement name="DO">
+              <block asynccall="false" colour="#0088ee" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id="MA=AFgWi?yXtNpb*ut4+" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                <field name="VAR">soma_notas</field>
+                <value name="VALUE">
+                  <block asynccall="false" colour="#5b6da5" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id="7(%G`j`{rPO-Ef7p+YG(" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
+                    <mutation items="2"/>
+                    <field name="OP1">ADD</field>
+                    <value name="ARG0">
+                      <block asynccall="false" colour="#0088ee" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id="r}#1B[JWHrLK$|38fan@" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">soma_notas</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block asynccall="false" colour="#745ba5" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id=".g;zOZTN0qWjEj_Fcc$/" origintype="lists_getIndex" output="true" tooltip="function() {&#10;      var mode = thisBlock.getFieldValue('MODE');&#10;      var where = thisBlock.getFieldValue('WHERE');&#10;      var tooltip = '';&#10;      switch(mode + ' ' + where) {&#10;      case 'GET FROM_START':&#10;      case 'GET FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_FROM;&#10;        break;&#10;      case 'GET FIRST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_FIRST;&#10;        break;&#10;      case 'GET LAST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_LAST;&#10;        break;&#10;      case 'GET RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_RANDOM;&#10;        break;&#10;      case 'GET_REMOVE FROM_START':&#10;      case 'GET_REMOVE FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FROM;&#10;        break;&#10;      case 'GET_REMOVE FIRST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FIRST;&#10;        break;&#10;      case 'GET_REMOVE LAST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_LAST;&#10;        break;&#10;      case 'GET_REMOVE RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_RANDOM;&#10;        break;&#10;      case 'REMOVE FROM_START':&#10;      case 'REMOVE FROM_END':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_FROM;&#10;        break;&#10;      case 'REMOVE FIRST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_FIRST;&#10;        break;&#10;      case 'REMOVE LAST':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_LAST;&#10;        break;&#10;      case 'REMOVE RANDOM':&#10;        tooltip = Blockly.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_RANDOM;&#10;        break;&#10;      }&#10;      if(where == 'FROM_START' || where == 'FROM_END') {&#10;        var msg = (where == 'FROM_START') ? Blockly.Msg.LISTS_INDEX_FROM_START_TOOLTIP : Blockly.Msg.LISTS_INDEX_FROM_END_TOOLTIP;&#10;        tooltip += '  ' + msg.replace('%1', thisBlock.workspace.options.oneBasedIndex ? '#1' : '#0');&#10;      }&#10;      return tooltip;&#10;    }" type="lists_getIndex">
+                        <mutation at="true" statement="false"/>
+                        <field name="MODE">GET</field>
+                        <field name="WHERE">FROM_START</field>
+                        <value name="VALUE">
+                          <block asynccall="false" colour="#0088ee" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id="a=U(IK9q/V;Cc%2gOAb?" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">notas</field>
+                          </block>
+                        </value>
+                        <value name="AT">
+                          <block asynccall="false" colour="#0088ee" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id="X10:YDkX_R7Yjcu.;(KK" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">i</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block asynccall="false" colour="#0088ee" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id="Mn3K=%H*-t6z)%rxaJM7" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                <field name="VAR">resultado_media</field>
+                <value name="VALUE">
+                  <block asynccall="false" colour="#5b6da5" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id=",mKx{wc#B@uOI,R8?=*F" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
+                    <mutation items="2"/>
+                    <field name="OP1">DIVIDE</field>
+                    <value name="ARG0">
+                      <block asynccall="false" colour="#0088ee" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id="!xNg~d?l)h3^fcoNBgFO" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">soma_notas</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block asynccall="false" colour="#745ba5" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id="WGi8QJmnx~i[IG1Uow)v" origintype="lists_length" output="true" tooltip="Retorna o tamanho de uma lista." type="lists_length">
+                        <value name="VALUE">
+                          <block asynccall="false" colour="#0088ee" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id=".ivm*x$D9uPI$(z?2u|O" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">notas</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block asynccall="false" colour="#0088ee" dependencyby="!8^3dIpIHuP7xE}Jzm~x" id=";_~m7M!{jDa*|e2/Bm@e" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+        <field name="VAR">resultado_media</field>
+      </block>
+    </value>
+  </block>
+  <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-487" y="68">
     <field name="NAME">manipular_listas</field>
     <comment h="80" pinned="false" w="160">Listas</comment>
     <statement name="STACK">
